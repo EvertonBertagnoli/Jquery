@@ -12,42 +12,35 @@
 
 <body>
     <header>
-        <h1>Galeria de Fotos</h1>
-        <button type="button">Nova imagem +</button>
+        <h1>Galeria de Imagens</h1>
+        <button type="button">Nova Imagem +</button>
     </header>
     <form>
-        <h2>Inserir nova imagem</h2>
-        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
-        <button type="submit">Adicionar</button>
-        <button id="botao-cancelar" type="reset">Cancelar</button>
+        <h2>inserir nova imagem</h2>
+        <input type="url" id="imgNova" required placeholder="Url da Imagem">
+        <button type="submit">Enviar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
     </form>
     <ul>
         <li>
-            <img src="foto1.jpg" alt="Pintura de um gato " />
+            <img src="./foto1.jpg" alt="Imagem de um gatinho">
             <div class="overlay-imagem-link">
-                <a href="foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-                </a>
-            </div>
+                <a href="./foto1.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>  
         </li>
         <li>
-            <img src="foto2.jpg" alt="Imagem de um Flamingo " />
+            <img src="./foto2.jpg" alt="Imagem de um flamingo">
             <div class="overlay-imagem-link">
-            <a href="foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-                </a>
-            </div>
+                <a href="./foto2.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div> 
         </li>
         <li>
-            <img src="foto3.jpg" alt="Imagem de cachorrinhos carregado em uma bolsa " />
+            <img src="./foto3.jpg" alt="Imagem de cachorros em um saco de carga">
             <div class="overlay-imagem-link">
-                <a href="foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
-                    Ver imagem em tamanho real
-                </a>
-            </div>
+                <a href="./foto3.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div> 
         </li>
     </ul>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
 </body>
-</html>

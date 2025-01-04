@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('header button').click(function(){
         $('form').slideDown();
     })
@@ -8,17 +8,20 @@ $(document).ready(function(){
     })
 
     $('form').on('submit', function(e){
-        e.preventDefult();
-        const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
-        const novoItem = $('<li></li>');
-        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
+        e.preventDefault();
+        const enderecoImgNova = $('#imgNova').val();
+        const novaLinha = $('<li style="display: none"></li>');
+        $(`<img src="${enderecoImgNova}" />`).appendTo(novaLinha);
         $(`
-            <div class="overlay-imagem-link"
-                <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
-                    Ver imagem em tamanho real
+            <div class="overlay-imagem-link">
+                <a href="${enderecoImgNova}" target="_blank" title="Ver imagem em tamanho real">
+                Ver magem em tamanho real
                 </a>
-            </div>
-        `).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
+            </div>`
+        ).appendTo(novaLinha);
+        $(novaLinha).appendTo('ul');
+        $(novaLinha).fadeIn(1000);
+        $('#imgNova').val('');
+
     })
 })
